@@ -24,6 +24,10 @@ function calculatePrice(){
     }
 };
 
+function windowReload(){
+    location.reload();
+}
+
 document.getElementById('price').style.display = 'none';
 document.getElementById('splitPrice').style.display = 'none';
 document.getElementById('splittingBox').style.display = 'none';

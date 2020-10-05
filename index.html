@@ -30,7 +30,7 @@
             <p>$ <input type="number" id="billAmt" placeholder="30" value='30'></p>
             <h5>How was your service?</h5>
             <select name="tipAmt" id="tipAmt">
-                <option selected="">Rate your service</option>
+                <option selected="">How you FEEL when tipping?</option>
                 <option value="1">No Tip</option>
                 <option value="1.05">5% - So-so</option>
                 <option value="1.1">10% - OK</option>
@@ -53,12 +53,28 @@
         <button type="button" onclick="calculatePrice()" class="btn blue-gradient">Final Bill</button>
         <div id="priceDisplay">
             <div id="price">
-                <h5>Final Bill:</h5>
-                <p>$ <span id="total"></span> </p>
+                <div class="box">
+                    <div>
+                        <h5>Final Bill:</h5>
+                        <p>$ <span id="total"></span> </p>
+                    </div>
+                    <div>
+                        <h5>Tip Amount:</h5>
+                        <p>$ <span id="finalTip"></span></p>
+                    </div>
+                </div>
             </div>
             <div id="splitPrice">
-                <h5>Split Amount:</h5>
-                <p>$ <span id="splitAmt"></span></p>
+                <div class="box">
+                    <div>
+                        <h5>Split Amount:</h5>
+                        <p>$ <span id="splitAmt"></span></p>
+                    </div>
+                    <div>
+                        <h5>Split tip Amount:</h5>
+                        <p>$ <span id="splitTip"></span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

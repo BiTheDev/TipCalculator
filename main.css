@@ -17,3 +17,12 @@ section{
     box-shadow: 10px 10px 58px 5px rgba(0,0,0,0.8);
 }
 
+#price .box, #splitPrice .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.box div{
+    width:50%;
+}

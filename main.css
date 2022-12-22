@@ -22,24 +22,32 @@ body {
   );
   background-attachment: fixed;
   padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
   font-family: "Dancing Script", cursive;
   width: 360px;
   height: auto;
-  border: 3px solid black;
   border-radius: 20px;
   margin: 0 auto;
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-box-shadow: 10px 10px 58px 1px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 10px 10px 58px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 10px 10px 58px 1px rgba(0, 0, 0, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.5);
 }
+
+h3{
+    color:#0984e3;
+}
+
 
 input[type="number"],
 select {

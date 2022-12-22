@@ -27,9 +27,9 @@
         <h3 class="blue-text">Restaurant Tip Calculator</h3>
         <form id="tipForm">
             <h5>Bill before Tax?</h5>
-            <p>$ <input type="number" id="billBeforeTax" placeholder="30" value='30'></p>
+            <p><input type="number" id="billBeforeTax" placeholder="30" value='30'></p>
             <h5>Bill after Tax?</h5>
-            <p>$ <input type="number" id="billAfterTax" placeholder="30" value='0'></p>
+            <p><input type="number" id="billAfterTax" placeholder="30" value='0'></p>
             <h5>How was your service?</h5>
             <select name="tipAmt" id="tipAmt">
                 <option selected="">How you FEEL when tipping?</option>
@@ -37,13 +37,13 @@
                 <option value="0.05">5% - So-so</option>
                 <option value="0.1">10% - OK</option>
                 <option value="0.15" selected>15% - Good</option>
-                <option value="0.18" selected>18% - Great</option>
+                <option value="0.18">18% - Great</option>
                 <option value="0.20">20% - Smile</option>
                 <option value="0.30">30% - Beautiful</option>
                 <option value="0.40">40% - Perfect</option>
                 <option value="0.50">50% - Amazing</option>
             </select>
-            <h5>Splitting?</h5>
+            <h5 style="margin-top: 5px;">Splitting?</h5>
             <select name="splitting" id="splitting" onchange="javascript:handleSplitBox(this)">
                 <option value="No">NO</option>
                 <option value="Yes">YES</option>
@@ -53,8 +53,8 @@
                 <p><input type="number" name="sharingPpl" id="sharingPpl" value=0></p>
             </div>
         </form>
-        <button type="button" onclick="calculatePrice()" class="btn blue-gradient">Final Bill</button>
-        <button type="button" onclick="windowReload()" class="btn peach-gradient">Reset</button>
+        <button type="button" onclick="calculatePrice()" class="btn btn-cyan">Final Bill</button>
+        <button type="button" onclick="windowReload()" class="btn btn-danger">Reset</button>
         <div id="priceDisplay">
             <div id="price">
                 <div class="box">
